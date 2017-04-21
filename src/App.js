@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Header } from './components/App/Header';
+import { Navbar } from './components/App/Navbar';
+import imgHeader from './resources/img/header13.jpg'
 
 class App extends Component {
   render() {
@@ -17,7 +18,13 @@ class App extends Component {
     //   </div>
     // );
     return (
-      <Header />
+      <div>
+        <img className="img-responsive" src={imgHeader} />
+        <Navbar />
+        <div className="container">
+          test
+        </div>
+      </div>
     )
   }
 }
