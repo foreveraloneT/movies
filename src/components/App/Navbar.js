@@ -16,7 +16,8 @@ import '../../theme/elements.css'
 
 const navbarStyle = {
   "border": "1px",
-  "border-radius": "0px",
+  "borderRadius": "0px",
+  "marginBottom": "0px",
 }
 
 export const Navbar = () => (
@@ -37,16 +38,16 @@ export const Navbar = () => (
         </div>
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-          <ul className="nav navbar-nav visible-xs">
-            <li className="text-center"><a href="#"><b>Home</b></a></li>
-            <li className="text-center"><a href="#"><b>About</b></a></li>
-          </ul>
-
           <div className="col-md-7 col-sm-6">
             <div className="navbar-search">
               <Search />
             </div>
           </div>
+
+          <ul className="nav navbar-nav visible-xs">
+            <li className="text-center"><a href="#"><b>Home</b></a></li>
+            <li className="text-center"><a href="#"><b>About</b></a></li>
+          </ul>
 
           <div className="col-md-2 col-sm-2">
             <ul className="nav navbar-nav navbar-right hidden-xs hidden-xs">

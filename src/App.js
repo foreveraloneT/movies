@@ -19,10 +19,12 @@ class App extends Component {
     // );
     return (
       <div>
-        <img className="img-responsive" src={imgHeader} />
-        <Navbar />
+        <header><Navbar /></header>
+        <img className="img-responsive sr-only" src={imgHeader} />
         <div className="container">
-          test
+          <div class="row">
+            {this.props.children}
+          </div>
         </div>
       </div>
     )
