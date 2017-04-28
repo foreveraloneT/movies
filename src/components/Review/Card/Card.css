@@ -1,0 +1,9 @@
+:local(.card-review) {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  background-color: #FFFFFF;
+  margin-top: 3%;
+  border-bottom: 1px solid rgba(100, 100, 100, .5);
+  cursor: pointer;
+}
