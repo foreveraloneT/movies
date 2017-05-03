@@ -5,5 +5,75 @@
   background-color: #FFFFFF;
   margin-top: 3%;
   border-bottom: 1px solid rgba(100, 100, 100, .5);
+}
+
+:local(.card-review article) {
   cursor: pointer;
+  margin: 0px 10px 0px 10px;
+}
+
+:local(.card-review article .topic) {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 20px;
+  color: #D0826F;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+:local(.card-review article .content) {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+:local(.card-review .stat) {
+  margin-top: 8px;
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.9em;
+  color:grey;
+}
+
+:local(.card-review .stat span) {
+  margin-left: 10px;
+}
+
+:local(.card-review .profile) {
+  margin:5px 0px 5px 5px;
+  display: inline-flex;
+  align-items:center;
+}
+
+:local(.card-review .profile .profile-picture) {
+  width:15%;
+  margin: auto;
+  order:1;
+}
+
+:local(.card-review .profile .profile-picture img) {
+  width: 100%;
+}
+
+:local(.card-review .profile .profile-detail) {
+  width:80%;
+  margin: auto;
+  order:2;
+}
+
+:local(.card-review .profile .profile-detail .display_name) {
+  font-size: 1.2em
+}
+
+:local(.card-review .profile .profile-detail .datetime) {
+  color:grey;
+  font-size: 0.8em
+}
+
+:local(.card-review .tag) {
+  min-height: 60px;
+  margin-top: 5px;
+  border-top: 1px solid rgba(100, 100, 100, .2);
 }

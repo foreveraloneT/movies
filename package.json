@@ -9,7 +9,9 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-text-truncate": "^0.9.0",
+    "react-timeago": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

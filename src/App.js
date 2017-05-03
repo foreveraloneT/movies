@@ -24,13 +24,28 @@ class App extends Component {
         <img className="img-responsive sr-only" src={imgHeader} />
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6">
               <Card />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6">
               <Card />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6">
+              <Card />
+            </div>
+            <div className="col-md-4 col-sm-6">
+              <Card />
+            </div>
+            <div className="col-md-4 col-sm-6">
+              <Card />
+            </div>
+            <div className="col-md-4 col-sm-6">
+              <Card />
+            </div>
+            <div className="col-md-4 col-sm-6">
+              <Card />
+            </div>
+            <div className="col-md-4 col-sm-6">
               <Card />
             </div>
           </div>
