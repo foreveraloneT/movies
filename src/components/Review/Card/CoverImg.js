@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './CoverImg.css'
 
 export const CoverImg = ({
@@ -9,4 +10,8 @@ export const CoverImg = ({
         src={imgSrc}
         className={styles['cover-img']} />
     )
+}
+
+CoverImg.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
 }

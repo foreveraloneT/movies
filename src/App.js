@@ -4,7 +4,7 @@ import './App.css';
 import { Navbar } from './components/App/Navbar';
 import imgHeader from './resources/img/header13.jpg'
 import { Card } from './components/Review/Card/Card'
-import { Slideshow } from './components/Slideshow/Slideshow'
+import Slideshow  from './containers/Slideshow/Slideshow'
 
 class App extends Component {
   render() {
@@ -23,7 +23,12 @@ class App extends Component {
       <div>
         <header><Navbar /></header>
         <img className="img-responsive sr-only" src={imgHeader} />
-        <Slideshow />
+        <Slideshow 
+          imgSet={[
+            'https://www.w3schools.com/w3css/img_nature_wide.jpg',
+            'https://www.w3schools.com/w3css/img_fjords_wide.jpg',
+            'https://www.w3schools.com/w3css/img_mountains_wide.jpg',
+          ]}/>
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-sm-6">

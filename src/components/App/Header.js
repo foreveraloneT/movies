@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import head from '../../resources/img/header13.jpg'
 
 export const Header = () => {
