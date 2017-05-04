@@ -4,6 +4,7 @@ import './App.css';
 import { Navbar } from './components/App/Navbar';
 import imgHeader from './resources/img/header13.jpg'
 import { Card } from './components/Review/Card/Card'
+import { Slideshow } from './components/Slideshow/Slideshow'
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
       <div>
         <header><Navbar /></header>
         <img className="img-responsive sr-only" src={imgHeader} />
+        <Slideshow />
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-sm-6">

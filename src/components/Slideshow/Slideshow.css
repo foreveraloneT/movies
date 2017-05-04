@@ -1,0 +1,35 @@
+:local(.slideshow) {
+  width: 100%;
+  position: relative;
+}
+
+:local(.slideshow img) {
+  width: 100%;
+}
+
+:local(.slideshow .menu) {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  bottom:10px;
+}
+
+:local(.circle-button) {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin: 3px;
+}
+
+:local(.circle-button:hover) {
+  background-color: #ccc;
+}
+
+:local(.active) {
+  background-color: #ccc;
+}
