@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <link rel="stylesheet" href="./React App_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--
+      Notice the use of  in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">.App {
+  text-align: center;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+</style><style type="text/css">.white-placeholder::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.white-placeholder::-moz-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+
+.white-placeholder::-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+
+.white-placeholder::-moz-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+
+.navbar-icon {
+  font-size: 1.3em;
+}
+
+.navbar-search {
+  padding: 7px 7px;
+}
+
+.navbar-main {
+  background-color: #D0826F;
+  border-color: #e7e7e7;
+}
+
+.no-focus:focus {
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: 0px 0px 0px 0px;
+}
+
+@media (min-width: 768px) {
+  .navbar-main {
+    background-color: #D0826F;
+    border-color: #e7e7e7;
+    padding-top: 2em;
+  }
+}
+
+.navbar-main .navbar-brand {
+  font-size: 1.5em;
+  color: white;
+  opacity: 1;
+}
+
+.navbar-main .navbar-text {
+  color: white;
+  opacity: 0.9;
+}
+.navbar-main .navbar-nav > li > a {
+  color: white;
+  opacity:0.7;
+}
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:focus {
+  color: white;
+  opacity:0.9;
+  background-color: transparent;
+}
+.navbar-main .navbar-nav > .active > a,
+.navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .active > a:focus {
+  color: white;
+  opacity:0.9;
+  background-color: transparent;
+}
+.navbar-main .navbar-nav > .disabled > a,
+.navbar-main .navbar-nav > .disabled > a:hover,
+.navbar-main .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-main .navbar-toggle {
+  border-color: #D0826F;
+}
+.navbar-main .navbar-toggle:hover,
+.navbar-main .navbar-toggle:focus {
+  background-color: #D0826F;
+}
+.navbar-main .navbar-toggle .icon-bar {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.navbar-main .navbar-collapse,
+.navbar-main .navbar-form {
+  border-color: #aaa;
+}
+.navbar-main .navbar-nav > .open > a,
+.navbar-main .navbar-nav > .open > a:hover,
+.navbar-main .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-main .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-main .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-main .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-main .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-main .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-main .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-main .navbar-link {
+  color: #777;
+}
+.navbar-main .navbar-link:hover {
+  color: #333;
+}
+.navbar-main .btn-link {
+  color: #777;
+}
+.navbar-main .btn-link:hover,
+.navbar-main .btn-link:focus {
+  color: #333;
+}
+.navbar-main .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-main .btn-link:hover,
+.navbar-main .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-main .btn-link:focus {
+  color: #ccc;
+}
+</style><style type="text/css">._2dFLr1vbfV_C7i-OgtwoR- {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  background-color: #FFFFFF;
+  margin-top: 3%;
+  border-bottom: 1px solid rgba(100, 100, 100, .5);
+  cursor: pointer;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- .UdjLL9VfezRFd6RkAjvL5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._1AO3VbCju9iG7HRdzDcSmc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._1jPw-_pKWL5e7Z6TwXzzsh {
+  margin-top: 5px;
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.9em;
+  color:grey;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._1jPw-_pKWL5e7Z6TwXzzsh span {
+  margin-left: 10px;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._2NQBf0kAVuWvtT5ZJBPqaJ {
+  text-align: center;
+  margin-top:10px;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._2NQBf0kAVuWvtT5ZJBPqaJ {
+  font-size: 0.9em;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._2NQBf0kAVuWvtT5ZJBPqaJ img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+._2dFLr1vbfV_C7i-OgtwoR- ._3ZhaKdwbfLDe4ghDBpBnzk {
+  min-height: 40px;
+  margin-top: 5px;
+  background-color: #D0826F;
+}
+</style><style type="text/css">._1f7j7UTW6VqsJqBCNy09RY {
+  position: relative;
+  width: 100%;
+}
+</style><style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+</style></head>
+  <body style="background-color:#FFEAD2;">
+    <div id="root"><div data-reactroot=""><header><nav class="navbar navbar-main" style="border: 1px; border-radius: 0px; margin-bottom: 0px;"><div class="container"><div class="row"><div class="col-md-3 col-sm-4"><div class="navbar-header"><a class="navbar-brand" href="http://localhost:3000/#"><b>NERD MOVIES</b></a><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><div class="col-md-7 col-sm-6"><div class="navbar-search"><div class="input-group"><input type="text" class="form-control no-focus white-placeholder" placeholder="Nerd Search" style="background-color: rgb(171, 84, 64); color: white; border: 0px;"><span class="input-group-btn"><button class="btn btn-default no-focus" type="button" style="background-color: rgb(171, 84, 64); color: white; border-color: rgb(171, 84, 64);"><span class="glyphicon glyphicon-search" style="opacity: 0.7;"></span></button></span></div></div></div><ul class="nav navbar-nav visible-xs"><li class="text-center"><a href="http://localhost:3000/#"><b>Home</b></a></li><li class="text-center"><a href="http://localhost:3000/#"><b>About</b></a></li></ul><div class="col-md-2 col-sm-2"><ul class="nav navbar-nav navbar-right hidden-xs hidden-xs"><li><a href="http://localhost:3000/#"><span class="glyphicon glyphicon-home navbar-icon"></span></a></li><li><a href="http://localhost:3000/#"><span class="glyphicon glyphicon-question-sign navbar-icon"></span></a></li></ul></div></div></div></div></nav></header><img class="img-responsive sr-only" src="./React App_files/header13.7b28c60d.jpg"><div class="container"><div class="row"><div class="col-md-4"><div class="_2dFLr1vbfV_C7i-OgtwoR-"><img src="./React App_files/14822036862408990319.jpg" class="_1f7j7UTW6VqsJqBCNy09RY"><div class="row"><div class="col-md-5 col-sm-5 col-xs-5"><div class="_2NQBf0kAVuWvtT5ZJBPqaJ"><img src="./React App_files/18056643_10213721237130295_8812331829249477229_n.jpg" class="img-rounded"><a><!-- react-text: 49 -->@<!-- /react-text --><!-- react-text: 50 -->TeeForeverAlone<!-- /react-text --></a></div></div><div class="col-md-7 col-sm-7 col-xs-7"><article><h4 class="UdjLL9VfezRFd6RkAjvL5"><b>Movies Topic is so Longggggggggggg</b></h4><p><div style="overflow: hidden;"><div><!-- react-text: 120 -->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam... <!-- /react-text --></div></div></p></article><div class="_1jPw-_pKWL5e7Z6TwXzzsh"><span class="glyphicon glyphicon-eye-open"></span><!-- react-text: 59 --> <!-- /react-text --><!-- react-text: 60 -->1.25 K<!-- /react-text --><span class="glyphicon glyphicon-share-alt"></span><!-- react-text: 62 --> <!-- /react-text --><!-- react-text: 63 -->60<!-- /react-text --></div></div></div><div class="row"><div class="col-md-12"><div class="_3ZhaKdwbfLDe4ghDBpBnzk"></div></div></div></div></div><div class="col-md-4"><div class="_2dFLr1vbfV_C7i-OgtwoR-"><img src="./React App_files/14822036862408990319.jpg" class="_1f7j7UTW6VqsJqBCNy09RY"><div class="row"><div class="col-md-5 col-sm-5 col-xs-5"><div class="_2NQBf0kAVuWvtT5ZJBPqaJ"><img src="./React App_files/18056643_10213721237130295_8812331829249477229_n.jpg" class="img-rounded"><a><!-- react-text: 75 -->@<!-- /react-text --><!-- react-text: 76 -->TeeForeverAlone<!-- /react-text --></a></div></div><div class="col-md-7 col-sm-7 col-xs-7"><article><h4 class="UdjLL9VfezRFd6RkAjvL5"><b>Movies Topic is so Longggggggggggg</b></h4><p><div style="overflow: hidden;"><div><!-- react-text: 122 -->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam... <!-- /react-text --></div></div></p></article><div class="_1jPw-_pKWL5e7Z6TwXzzsh"><span class="glyphicon glyphicon-eye-open"></span><!-- react-text: 85 --> <!-- /react-text --><!-- react-text: 86 -->1.25 K<!-- /react-text --><span class="glyphicon glyphicon-share-alt"></span><!-- react-text: 88 --> <!-- /react-text --><!-- react-text: 89 -->60<!-- /react-text --></div></div></div><div class="row"><div class="col-md-12"><div class="_3ZhaKdwbfLDe4ghDBpBnzk"></div></div></div></div></div><div class="col-md-4"><div class="_2dFLr1vbfV_C7i-OgtwoR-"><img src="./React App_files/14822036862408990319.jpg" class="_1f7j7UTW6VqsJqBCNy09RY"><div class="row"><div class="col-md-5 col-sm-5 col-xs-5"><div class="_2NQBf0kAVuWvtT5ZJBPqaJ"><img src="./React App_files/18056643_10213721237130295_8812331829249477229_n.jpg" class="img-rounded"><a><!-- react-text: 101 -->@<!-- /react-text --><!-- react-text: 102 -->TeeForeverAlone<!-- /react-text --></a></div></div><div class="col-md-7 col-sm-7 col-xs-7"><article><h4 class="UdjLL9VfezRFd6RkAjvL5"><b>Movies Topic is so Longggggggggggg</b></h4><p><div style="overflow: hidden;"><div><!-- react-text: 124 -->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam... <!-- /react-text --></div></div></p></article><div class="_1jPw-_pKWL5e7Z6TwXzzsh"><span class="glyphicon glyphicon-eye-open"></span><!-- react-text: 111 --> <!-- /react-text --><!-- react-text: 112 -->1.25 K<!-- /react-text --><span class="glyphicon glyphicon-share-alt"></span><!-- react-text: 114 --> <!-- /react-text --><!-- react-text: 115 -->60<!-- /react-text --></div></div></div><div class="row"><div class="col-md-12"><div class="_3ZhaKdwbfLDe4ghDBpBnzk"></div></div></div></div></div></div></div></div></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./React App_files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./React App_files/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+  <script type="text/javascript" src="./React App_files/bundle.js"></script>
+
+</body></html>

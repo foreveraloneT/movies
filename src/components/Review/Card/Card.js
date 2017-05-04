@@ -8,9 +8,9 @@ const statTranform = (value) => {
   if (value < 1000)
     return value
   if (value < 1000000)
-    return value/1000 + " K"
+    return value/1000 + "K"
   else {
-    return value/1000000 + " M"
+    return value/1000000 + "M"
   }
 }
 
