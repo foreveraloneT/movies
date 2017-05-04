@@ -10,10 +10,6 @@ export const Slideshow = ({
   position,
   setPosition,
 }) => {
-  const activeCircle = classNames(
-    styles['circle-button'],
-    styles['active'],
-  )
 
   const leftButtStyles = classNames(
     'glyphicon glyphicon-chevron-left',
@@ -43,10 +39,22 @@ export const Slideshow = ({
     )
   }
 
+  const generateSlide = (imgSet, position) => (
+    times(imgSet.length).map((i) => {
+      if (position == i + 1)
+        return (
+          <img src={imgSet[i]} />
+        )
+      return (
+        <img src={imgSet[i]} className={styles['hidden']} />
+      )
+    })
+  )
+
 
   return (
     <div className={styles['slideshow']}>
-      <img src={imgSet[position - 1]} />
+      {generateSlide(imgSet, position)}
 
       <div className={styles['menu']}>
         {generateCircleButton(imgSet.length, position)}

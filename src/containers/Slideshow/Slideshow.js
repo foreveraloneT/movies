@@ -11,6 +11,8 @@ export default class SlideshowContainer extends Component {
         position: 1,
     }
 
+    autoTime = 10
+
     setPosition = (position) => {
         const max = this.props.imgSet.length
         if (position > max)
@@ -27,7 +29,7 @@ export default class SlideshowContainer extends Component {
     componentDidMount() {
         this.timer = setInterval(
             () => this.setPosition(this.state.position+1),
-            5000
+            this.autoTime*1000
         )
     }
     

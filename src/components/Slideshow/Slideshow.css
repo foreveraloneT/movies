@@ -22,7 +22,7 @@
   position: absolute;
   text-align: center;
   color: white;
-  bottom:10px;
+  bottom:1%;
 }
 
 :local(.slideshow .arrow) {
@@ -32,8 +32,8 @@
 }
 
 :local(.circle-button) {
-  height: 13px;
-  width: 13px;
+  height: 10px;
+  width: 10px;
   padding: 0;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -54,7 +54,7 @@
   cursor: pointer;
   color: #ccc;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 :local(.left-button) {
@@ -65,4 +65,8 @@
 :local(.right-button) {
   float: right;
   padding-right: 1%;
+}
+
+:local(.hidden) {
+  display:none;
 }
