@@ -13,7 +13,72 @@
             "stat":{
               "view": 1208,
               "share": 10  
-            }
+            },
+            "datetime_create": "2017-05-03T11:30:33+07:00"
+        },
+        {
+            "id": 2,
+            "topic": "Bad Genius (2017) ฉลาดเกมส์โกง",
+            "content_no_tag":"เป็นนิสัยส่วนตัวจริงๆที่กูจะคิดว่าหนังส่วนใหญ่ กับ กู จะถูกตัดสินว่าจะชอบหรือไม่ชอบ คลิกหรือไม่คลิก ก็แค่เปิดเรื่องมา 10 นาทีแรก ถ้าโดนก็พร้อมที่จะโจนทะยานไปกับมันทั้งเรื่องแม้มันจะบ้าบอแค่ไหนก็ตาม แต่ถ้าไม่โดน ต่อให้เป็นงานของผู้กำกับเทพ หรือทุนสร้างอลังการ ได้รางวี่รางวัลมาแค่ไหน กูก็จะมาด่าลงเพจให้พวกมึงได้ถากถางกันนี่แหละ อิอิ.เรื่องนี้ แค่เปิดเรื่องก็รู้ได้เลยทันทีว่าเดือดสัสแน่ๆ เป็นฉากฝากฝังลูกสาวเข้าเรียนธรรมดาๆในห้อง ผอ. แค่นี้ก็ตัดสินกันเลยว่ากูคลิกกับหนังเรื่องนี้แน่ๆ ก่อนหน้านี้เกลียด เคาท์ดาวน์ งานเรื่องก่อนของผู้กำกับเหี้ยๆ แต่กับหนังนักเรียนเรื่องนี้แค่ฉากฝากตัวเข้าเรียนธรรมดาๆ มันมีทั้ง ความฉลาด ความขบขัน ความเดือดดาลทะลุเพดานห้อง ผอ.ไปแล้ว ปีนี้สมทบชาย เอก ธเนศ วรากุลนุเคราะห์ อดีตร็อคเกอร์ที่มาในมาดครูแก่เอาไปแดกแน่นอน มันไม่ใช่ตลกต่อมุก หรือพยายามให้ขำ แต่เป็นความขบขันที่ค่อนข้างทิ่มแทง เจ็บปวด ด่าระบบการศึกษาไทยให้คนดูฮา",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/56a2245b0b4d7a5d5cccd698/14534882868821074497.jpg",
+            "owner": {
+                "id": 2,
+                "id_name": "TuaronPopcorncheese",
+                "profile_picture": "https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/18056765_1482765771773903_6894130835551120098_n.jpg?oh=5ce122298cacd77081743d951c42755c&oe=5988CA49"
+            },
+            "stat":{
+              "view": 12000,
+              "share": 10  
+            },
+            "datetime_create": "2017-05-06T11:30:33+07:00"
+        },
+        {
+            "id": 3,
+            "topic": "Mary Poppins Returns in GOTG2",
+            "content_no_tag":"...ปีก่อนใน Civil War มีฉากที่ Spider-Man พูดถึงหุ่นยนตร์ AT-AT ใน Star wars ภาคเก่า...ปีนี้ GuardiansVol.2 ก็มีพูดถึง Mary Poppins เหมือนกันถ้าดูผ่านๆก็ตลกดี แต่ถ้าดูดีๆ คือ หนังทั้งหมดที่กล่าวมา 4 เรื่อง เป็นหนังของค่าย #Disney ทั้งหมด ซึ่ง Mary Poppins ก็เป็นหนังเก่าที่ค่ายกำลังสร้างภาคใหม่อยู่ คือ Mary Poppins Returns (2018)",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/57e69f831e23f84f4874d7c2/14753203299095989390.jpg",
+            "owner": {
+                "id": 3,
+                "id_name": "kudoleaw",
+                "profile_picture": "https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/12647304_1106666566024869_5617585896272280348_n.jpg?oh=3ef6f0fbc16d2ac44e2f53beecf2f89d&oe=5980D225"
+            },
+            "stat":{
+              "view": 30000,
+              "share": 89  
+            },
+            "datetime_create": "2017-05-06T19:45:33+07:00"
+        },
+        {
+            "id": 4,
+            "topic": "500 Days of Summer",
+            "content_no_tag":".. ใครที่เพิ่งอกหักหรือเพิ่งนกมา โดนเรื่องนี้เข้าไปอาจถึงแก่กรรมได้เลยนะครับ เพราะหนังนำเสนอได้เจ็บจี๊ดเหลือเกินสำหรับคนที่ประสบปัญหาเคราะห์กรรมด้านฟามรัก และยังไม่พอหนังยังกระแทกความรู้สึกให้แบบหนักๆสำหรับคนมีคู่ โดยเฉพาะคู่รักที่คิดง่ายๆว่า ค่อยๆปรับตัวกันไป เดี๋ยวก็เข้ากันได้เอง ...",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/58088920900296c57510bdeb/14769547696064651572.jpg",
+            "owner": {
+                "id": 4,
+                "id_name": "TheaterGangster",
+                "profile_picture": "https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/18157794_1665464550428001_1051408292126372678_n.jpg?oh=c357ebc3084c784733fc8c27c42d5a68&oe=59BB25EC"
+            },
+            "stat":{
+              "view": 10000,
+              "share": 58  
+            },
+            "datetime_create": "2017-05-06T22:00:33+07:00"
+        },
+        {
+            "id": 5,
+            "topic": "Content is Longggggggggggggggggggggggggggg",
+            "content_no_tag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam nulla, sodales vitae tempor nec, facilisis eget nulla. Quisque neque est, suscipit quis nisl a, dictum tincidunt quam. Morbi et diam sollicitudin, posuere elit vel, pulvinar justo. Vivamus ut mattis erat, sed pharetra dolor. Sed ultricies felis id tincidunt sollicitudin. Sed dignissim fringilla dolor, in tempor justo efficitur in. Proin pellentesque quam nec pretium finibus. Duis ornare cursus lorem et suscipit.",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/5858a1b9884272235a6a37e9/14822036862408990319.jpg",
+            "owner": {
+                "id": 1,
+                "id_name": "TeeForeverAlone",
+                "profile_picture": "https://scontent-kut2-1.xx.fbcdn.net/v/t1.0-9/18056643_10213721237130295_8812331829249477229_n.jpg?oh=6718f808c36cf718e74c3909c338f1f1&oe=597CFCCE"
+            },
+            "stat":{
+              "view": 11000208,
+              "share": 10000  
+            },
+            "datetime_create": "2017-05-03T11:30:33+07:00"
         }
     ]
 }

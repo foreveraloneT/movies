@@ -12,7 +12,9 @@ export const CardList = ({
             {
                 reviews.map((review) => (
                     <div className={`col-md-${colSize} col-sm-${colSize} col-xs-12`}>
-                        <Card />
+                        <Card
+                            key={review.id}
+                            review={review}/>
                     </div>
                 ))
             }

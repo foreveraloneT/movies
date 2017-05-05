@@ -16,7 +16,7 @@ class CardListContainer extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return true
+        return this.props.reviews !== nextProps.reviews
     }
 
     componentDidMount() {
@@ -24,17 +24,17 @@ class CardListContainer extends Component {
     }
 
     render() {
-        // console.debug(this.props.reviews)
+        const {itemPerRow, reviews} = this.props
         return (
             <CardList
-                itemPerRow={this.props.itemPerRow} 
-                reviews={this.props.reviews} />
+                itemPerRow={itemPerRow} 
+                reviews={reviews} />
         )
     }
 }
 
 const mapStateToProps = (state) => ({
-    reviews: state.reviews
+    reviews: state.reviews.data
 })
 
 export default connect(

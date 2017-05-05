@@ -4,17 +4,26 @@ import {
     GET_REVIEWS_FAILURE,
  } from '../constants/actionTypes'
 
-const initialState = []
+const initialState = {
+        action: 'none', 
+        data: [],
+    }
+
+const getState = (action, data) => (
+    {
+        action,
+        data,
+    }
+)
 
 export default (state = initialState, action) => {
-    console.debug(action)
     switch(action.type) {
         case GET_REVIEWS_REQUEST:
-            return action.payload
+            return getState(action.type, [])
         case GET_REVIEWS_SUCCESS:
-            return action.payload
+            return getState(action.type, action.payload)
         case GET_REVIEWS_FAILURE:
-            return action.payload
+            return getState(action.type, [])
         default:
             return state
     }
