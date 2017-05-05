@@ -87,7 +87,7 @@ export const Card = ({
                 Movies Topic is so Longggggggggggg
               </div>
               <TextTruncate
-                line={4}
+                line={3}
                 truncateText="..."
                 text={content} />
             </article>

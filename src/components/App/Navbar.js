@@ -1,6 +1,7 @@
 import React from 'react'
 import { Search } from './Search'
 import '../../theme/elements.css'
+import { Link } from 'react-router'
 
 // export const Navbar = () => {
 //   return (
@@ -45,14 +46,14 @@ export const Navbar = () => (
           </div>
 
           <ul className="nav navbar-nav visible-xs">
-            <li className="text-center"><a href="#"><b>Home</b></a></li>
-            <li className="text-center"><a href="#"><b>About</b></a></li>
+            <li className="text-center"><Link to={{pathname:'/'}}><b>Home</b></Link></li>
+            <li className="text-center"><Link to={{pathname:'/about'}}><b>About</b></Link></li>
           </ul>
 
           <div className="col-md-2 col-sm-2">
             <ul className="nav navbar-nav navbar-right hidden-xs hidden-xs">
-              <li><a href="#"><span className="glyphicon glyphicon-home navbar-icon"></span></a></li>
-              <li><a href="#"><span className="glyphicon glyphicon-question-sign navbar-icon"></span></a></li>
+              <li><Link to={{pathname:'/'}}><span className="glyphicon glyphicon-home navbar-icon"></span></Link></li>
+              <li><Link to={{pathname:'/about'}}><span className="glyphicon glyphicon-question-sign navbar-icon"></span></Link></li>
             </ul>
           </div>
 

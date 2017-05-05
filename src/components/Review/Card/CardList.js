@@ -4,13 +4,14 @@ import { Card } from './Card'
 
 export const CardList = ({
     reviews,
+    itemPerRow = 1,
 }) => {
-
+    const colSize = 12/itemPerRow  
     return (
         <div className="row">
             {
                 reviews.map((review) => (
-                    <div className="col-md-4 col-sm-6">
+                    <div className={`col-md-${colSize} col-sm-${colSize} col-xs-12`}>
                         <Card />
                     </div>
                 ))
@@ -20,5 +21,6 @@ export const CardList = ({
 }
 
 CardList.propTypes = {
-    reviews: PropTypes.array.isRequired
+    reviews: PropTypes.array.isRequired,
+    itemPerRow: PropTypes.number,
 }

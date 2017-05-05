@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { CardList } from '../../../components/Review/Card/CardList'
+import { getReviewList } from '../../../actions/review'
 
-export default class CardListContainer extends Component {
+class CardListContainer extends Component {
     // static propTypes = {
-
+    //     reviews: PropTypes.array.isRequired,
+    //     getReviewList : PropTypes.func.isRequired,
+    //     itemPerRow: PropTypes.number,
     // }
 
-    state = {
-        reviews: [],
-    }
-
     loadReviews = () => {
-        this.setState({reviews: [1,2,3,4,5,6,7,8]})
+        this.props.getReviewList()
     }
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -24,9 +24,20 @@ export default class CardListContainer extends Component {
     }
 
     render() {
+        console.debug(this.props.reviews)
         return (
-            <CardList 
-                reviews={this.state.reviews} />
+            <CardList
+                itemPerRow={this.props.itemPerRow} 
+                reviews={this.props.reviews} />
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    reviews: state.reviews
+})
+
+export default connect(
+    mapStateToProps,
+    { getReviewList: getReviewList }
+)(CardListContainer)
