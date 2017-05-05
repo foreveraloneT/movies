@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/App/Navbar';
 import imgHeader from './resources/img/header13.jpg'
-import { Card } from './components/Review/Card/Card'
-import Slideshow  from './containers/Slideshow/Slideshow'
+import CardList  from './containers/Review/Card/CardList'
+import Slideshow from './containers/Slideshow/Slideshow'
 
 class App extends Component {
   render() {
@@ -31,32 +31,7 @@ class App extends Component {
             'https://firebasestorage.googleapis.com/v0/b/movies-52a54.appspot.com/o/starwar1.jpg?alt=media&token=63252594-a93a-4713-89fd-1d35b99e51aa',
           ]}/>
         <div className="container">
-          <div className="row">
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-            <div className="col-md-4 col-sm-6">
-              <Card />
-            </div>
-          </div>
+          <CardList />
         </div>
       </div>
     )
