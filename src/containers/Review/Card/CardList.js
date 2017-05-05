@@ -5,11 +5,11 @@ import { CardList } from '../../../components/Review/Card/CardList'
 import { getReviewList } from '../../../actions/review'
 
 class CardListContainer extends Component {
-    // static propTypes = {
-    //     reviews: PropTypes.array.isRequired,
-    //     getReviewList : PropTypes.func.isRequired,
-    //     itemPerRow: PropTypes.number,
-    // }
+    static propTypes = {
+        reviews: PropTypes.array.isRequired,
+        getReviewList : PropTypes.func.isRequired,
+        itemPerRow: PropTypes.number,
+    }
 
     loadReviews = () => {
         this.props.getReviewList()
@@ -24,7 +24,7 @@ class CardListContainer extends Component {
     }
 
     render() {
-        console.debug(this.props.reviews)
+        // console.debug(this.props.reviews)
         return (
             <CardList
                 itemPerRow={this.props.itemPerRow} 
