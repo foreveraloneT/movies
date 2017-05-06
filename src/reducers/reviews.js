@@ -7,23 +7,25 @@ import {
 const initialState = {
         action: 'none', 
         data: [],
+        newCount: [],
     }
 
-const getState = (action, data) => (
+const getState = (action, data, newCount) => (
     {
         action,
         data,
+        newCount,
     }
 )
 
 export default (state = initialState, action) => {
     switch(action.type) {
         case GET_REVIEWS_REQUEST:
-            return getState(action.type, [])
+            return getState(GET_REVIEWS_REQUEST, state.data, 0)
         case GET_REVIEWS_SUCCESS:
-            return getState(action.type, action.payload)
+            return getState(GET_REVIEWS_SUCCESS, state.data.concat(action.payload), action.payload.length)
         case GET_REVIEWS_FAILURE:
-            return getState(action.type, [])
+            return getState(GET_REVIEWS_FAILURE, state.data, 0)
         default:
             return state
     }

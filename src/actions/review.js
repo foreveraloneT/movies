@@ -6,9 +6,17 @@ import {
     GET_REVIEWS_FAILURE,
  } from '../constants/actionTypes'
 
-export const getReviewList = () => ({
+const getParamsQuery = (params = {}) => (
+        params == {} ? '' :
+        Object.keys(params).reduce((query, param) => (
+             `${query}${param}=${params[param]}&`
+        ), '?').slice(0, -1)
+)
+
+export const getReviewList = (params = {}) => ({
     [CALL_API]: {
-        endpoint: REVIEW_ENDPOINT,
+        endpoint: REVIEW_ENDPOINT + getParamsQuery(params),
+        headers: { 'Content-Type': 'application/json' },
         method: 'GET',
         types: [GET_REVIEWS_REQUEST, GET_REVIEWS_SUCCESS, GET_REVIEWS_FAILURE],
     }

@@ -1,22 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Card } from './Card'
+import 'font-awesome/css/font-awesome.min.css'
+import FontAwesome from 'react-fontawesome'
+import {
+    GET_REVIEWS_REQUEST, 
+    GET_REVIEWS_SUCCESS, 
+    GET_REVIEWS_FAILURE,
+ } from '../../../constants/actionTypes'
+ import styles from './CardList.css'
 
 export const CardList = ({
     reviews,
-    itemPerRow = 1,
-}) => {
-    const colSize = 12/itemPerRow  
+    status
+}) => { 
     return (
-        <div className="row">
+        <div className={styles['card-list']}>
             {
                 reviews.map((review) => (
-                    <div className={`col-md-${colSize} col-sm-${colSize} col-xs-12`}>
-                        <Card
-                            key={review.id}
-                            review={review}/>
-                    </div>
+                    <Card
+                        key={review.id}
+                        review={review}/>
                 ))
+            }
+            {
+                status === GET_REVIEWS_SUCCESS ? 
+                null :
+                <FontAwesome
+                    className={styles['load-icon']}
+                    name='spinner'
+                    size='2x'
+                    spin
+                    tag='i' />
             }
         </div>
     )
@@ -24,5 +39,5 @@ export const CardList = ({
 
 CardList.propTypes = {
     reviews: PropTypes.array.isRequired,
-    itemPerRow: PropTypes.number,
+    status:PropTypes.string.isRequired,
 }

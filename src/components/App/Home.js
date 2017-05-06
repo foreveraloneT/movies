@@ -16,8 +16,13 @@ export const Home = ({
 
         <div className="container">
             <div className="row">
-            <div className="col-md-12">
-                <CardList itemPerRow={3}/>
+            <div className="col-md-8 col-xs-12 col-sm-12">
+                <CardList />
+            </div>
+            <div className="col-md-4 visible-md visible-lg">
+                <div  style={{marginTop:"6%", backgroundColor:"white"}}>
+                    sidebar
+                </div>
             </div>
             </div>
         </div>    

@@ -78,7 +78,55 @@
               "view": 11000208,
               "share": 10000  
             },
-            "datetime_create": "2017-05-03T11:30:33+07:00"
+            "datetime_create": "2017-05-06T22:30:33+07:00"
+        },
+        {
+            "id": 6,
+            "topic": "Content XXXX",
+            "content_no_tag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam nulla, sodales vitae tempor nec, facilisis eget nulla. Quisque neque est, suscipit quis nisl a, dictum tincidunt quam. Morbi et diam sollicitudin, posuere elit vel, pulvinar justo. Vivamus ut mattis erat, sed pharetra dolor. Sed ultricies felis id tincidunt sollicitudin. Sed dignissim fringilla dolor, in tempor justo efficitur in. Proin pellentesque quam nec pretium finibus. Duis ornare cursus lorem et suscipit.",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/5858a1b9884272235a6a37e9/14822036862408990319.jpg",
+            "owner": {
+                "id": 1,
+                "id_name": "TeeForeverAlone",
+                "profile_picture": "https://scontent-kut2-1.xx.fbcdn.net/v/t1.0-9/18056643_10213721237130295_8812331829249477229_n.jpg?oh=6718f808c36cf718e74c3909c338f1f1&oe=597CFCCE"
+            },
+            "stat":{
+              "view": 1000,
+              "share": 10 
+            },
+            "datetime_create": "2017-05-06T22:50:33+07:00"
+        },
+        {
+            "id": 7,
+            "topic": "Content YYYYYYYYYYYYY",
+            "content_no_tag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam nulla, sodales vitae tempor nec, facilisis eget nulla. Quisque neque est, suscipit quis nisl a, dictum tincidunt quam. Morbi et diam sollicitudin, posuere elit vel, pulvinar justo. Vivamus ut mattis erat, sed pharetra dolor. Sed ultricies felis id tincidunt sollicitudin. Sed dignissim fringilla dolor, in tempor justo efficitur in. Proin pellentesque quam nec pretium finibus. Duis ornare cursus lorem et suscipit.",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/5858a1b9884272235a6a37e9/14822036862408990319.jpg",
+            "owner": {
+                "id": 1,
+                "id_name": "TeeForeverAlone",
+                "profile_picture": "https://scontent-kut2-1.xx.fbcdn.net/v/t1.0-9/18056643_10213721237130295_8812331829249477229_n.jpg?oh=6718f808c36cf718e74c3909c338f1f1&oe=597CFCCE"
+            },
+            "stat":{
+              "view": 2000,
+              "share": 10 
+            },
+            "datetime_create": "2017-05-06T23:00:33+07:00"
+        },
+        {
+            "id": 8,
+            "topic": "Content ZZZZZZZZZZZZZZZZ",
+            "content_no_tag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultrices aliquam. Aenean quam nulla, sodales vitae tempor nec, facilisis eget nulla. Quisque neque est, suscipit quis nisl a, dictum tincidunt quam. Morbi et diam sollicitudin, posuere elit vel, pulvinar justo. Vivamus ut mattis erat, sed pharetra dolor. Sed ultricies felis id tincidunt sollicitudin. Sed dignissim fringilla dolor, in tempor justo efficitur in. Proin pellentesque quam nec pretium finibus. Duis ornare cursus lorem et suscipit.",
+            "cover":"https://s3-ap-southeast-1.amazonaws.com/media.storylog/storycontent/5858a1b9884272235a6a37e9/14822036862408990319.jpg",
+            "owner": {
+                "id": 1,
+                "id_name": "TeeForeverAlone",
+                "profile_picture": "https://scontent-kut2-1.xx.fbcdn.net/v/t1.0-9/18056643_10213721237130295_8812331829249477229_n.jpg?oh=6718f808c36cf718e74c3909c338f1f1&oe=597CFCCE"
+            },
+            "stat":{
+              "view": 35000,
+              "share": 10 
+            },
+            "datetime_create": "2017-05-06T23:00:33+07:00"
         }
     ]
 }

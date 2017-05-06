@@ -7,34 +7,68 @@ import { getReviewList } from '../../../actions/review'
 class CardListContainer extends Component {
     static propTypes = {
         reviews: PropTypes.array.isRequired,
+        status:PropTypes.string.isRequired,
         getReviewList : PropTypes.func.isRequired,
-        itemPerRow: PropTypes.number,
+        newCount: PropTypes.number.isRequired,
     }
 
-    loadReviews = () => {
-        this.props.getReviewList()
+    limit = 3
+
+    loadReviews = (params={}) => {
+        this.props.getReviewList(params)
+    }
+
+    loadNextReviews = () => {
+        console.debug(this.props.newCount)
+        if (window.scrollY + innerHeight >= document.body.offsetHeight && 
+            this.props.newCount >= this.limit) {
+            const params = {
+                _start: this.props.reviews.length,
+                _limit: this.limit,
+                _sort: 'datetime_create',
+                _order: 'DESC', 
+            }
+            this.loadReviews(params)
+        }
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return this.props.reviews !== nextProps.reviews
+        return this.props.reviews !== nextProps.reviews ||
+               this.props.status !== nextProps.status
     }
 
     componentDidMount() {
-        this.loadReviews()    
+        const params = {
+            _start: this.props.reviews.length,
+            _limit: this.limit,
+            _sort: 'datetime_create',
+            _order: 'DESC', 
+        }
+        this.loadReviews(params)
+
+        window.addEventListener("scroll", this.loadNextReviews)    
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.loadNextReviews)
     }
 
     render() {
-        const {itemPerRow, reviews} = this.props
+        const {reviews, status} = this.props
+        console.debug(status)
         return (
             <CardList
-                itemPerRow={itemPerRow} 
-                reviews={reviews} />
+                reviews={reviews} 
+                status={status} />
         )
+
     }
 }
 
 const mapStateToProps = (state) => ({
-    reviews: state.reviews.data
+    reviews: state.reviews.data,
+    status: state.reviews.action,
+    newCount: state.reviews.newCount,
 })
 
 export default connect(

@@ -1,0 +1,10 @@
+:local(.load-icon) {
+    margin-left: 48%;
+    margin-top: 3%;
+    position: relative;
+    color: #D0826F;
+}
+
+:local(.card-list) {
+    margin-bottom: 3%;
+}
