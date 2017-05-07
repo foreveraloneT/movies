@@ -4,6 +4,9 @@ import {
     GET_REVIEWS_REQUEST, 
     GET_REVIEWS_SUCCESS, 
     GET_REVIEWS_FAILURE,
+    REFRESH_REVIEWS_REQUEST,
+    REFRESH_REVIEWS_SUCCESS,
+    REFRESH_REVIEWS_FAILURE,
  } from '../constants/actionTypes'
 
 const getParamsQuery = (params = {}) => (
@@ -19,5 +22,14 @@ export const getReviewList = (params = {}) => ({
         headers: { 'Content-Type': 'application/json' },
         method: 'GET',
         types: [GET_REVIEWS_REQUEST, GET_REVIEWS_SUCCESS, GET_REVIEWS_FAILURE],
+    }
+})
+
+export const reFreshReviewList = (params = {}) => ({
+    [CALL_API]: {
+        endpoint: REVIEW_ENDPOINT + getParamsQuery(params),
+        headers: { 'Content-Type': 'application/json' },
+        method: 'GET',
+        types: [REFRESH_REVIEWS_REQUEST, REFRESH_REVIEWS_SUCCESS, REFRESH_REVIEWS_FAILURE],
     }
 })

@@ -3,8 +3,12 @@ import React from 'react';
 export const About = ({
 
 }) => (
-    <div>
-        <h1 className="text-center">About Me</h1>   
+    <div className="container">
+        <div className="row">
+            <div className="col-md-12">
+                <h1 className="text-center">About Me</h1>   
+            </div>
+        </div>
     </div>
 )
 

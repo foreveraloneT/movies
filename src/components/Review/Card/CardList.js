@@ -3,11 +3,6 @@ import PropTypes from 'prop-types'
 import { Card } from './Card'
 import 'font-awesome/css/font-awesome.min.css'
 import FontAwesome from 'react-fontawesome'
-import {
-    GET_REVIEWS_REQUEST, 
-    GET_REVIEWS_SUCCESS, 
-    GET_REVIEWS_FAILURE,
- } from '../../../constants/actionTypes'
  import styles from './CardList.css'
 
 export const CardList = ({
@@ -24,7 +19,7 @@ export const CardList = ({
                 ))
             }
             {
-                status === GET_REVIEWS_SUCCESS ? 
+                status === 'success' ? 
                 null :
                 <FontAwesome
                     className={styles['load-icon']}

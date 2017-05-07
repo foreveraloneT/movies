@@ -2,6 +2,8 @@ import React from 'react'
 import { Search } from './Search'
 import '../../theme/elements.css'
 import { Link } from 'react-router'
+import classNames from 'classnames'
+import PropTypes from 'prop-types'
 
 const navbarStyle = {
   "border": "1px",
@@ -13,7 +15,18 @@ const refreshPage = () => (
   window.location.reload()
 )
 
-export const Navbar = () => (
+const menuStyle = (current, menu) => (
+  classNames({
+    "text-center": true,
+    active: current === menu,
+  })
+)
+
+export const Navbar = ({
+  clickHome,
+  clickAbout,
+  current,
+}) => (
   <nav className='navbar navbar-main' style={navbarStyle}>
     <div className="container">
 
@@ -38,14 +51,30 @@ export const Navbar = () => (
           </div>
 
           <ul className="nav navbar-nav visible-xs">
-            <li className="text-center"><Link to='/' onClick={refreshPage}><b>Home</b></Link></li>
-            <li className="text-center"><Link to='/about'><b>About</b></Link></li>
+            <li className={menuStyle(current, 'home')}>
+              <Link to='/' onClick={() => clickHome()}>
+                <b>Home</b>
+              </Link>
+            </li>
+            <li className={menuStyle(current, 'about')}>
+              <Link to='/about' onClick={() => clickAbout()}>
+                <b>About</b>
+              </Link>
+            </li>
           </ul>
 
           <div className="col-md-2 col-sm-2">
             <ul className="nav navbar-nav navbar-right hidden-xs hidden-xs">
-              <li><Link to='/' onClick={refreshPage}><span className="glyphicon glyphicon-home navbar-icon"></span></Link></li>
-              <li><Link to='/about'><span className="glyphicon glyphicon-question-sign navbar-icon"></span></Link></li>
+              <li className={menuStyle(current, 'home')}>
+                <Link to='/' onClick={() => clickHome()} >
+                  <span className="glyphicon glyphicon-home navbar-icon"></span>
+                </Link>
+              </li>
+              <li className={menuStyle(current, 'about')}>
+                <Link to='/about' onClick={() => clickAbout()} >
+                  <span className="glyphicon glyphicon-question-sign navbar-icon"></span>
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -56,4 +85,12 @@ export const Navbar = () => (
   </nav>
 )
 
+Navbar.proptypes = {
+  clickHome: PropTypes.func.isRequired,
+  clickAbout: PropTypes.func.isRequired,
+  current: PropTypes.string.isRequired,
+}
+
 export default Navbar
+
+

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
+import Navbar from '../../containers/App/Navbar';
 import CardList  from '../../containers/Review/Card/CardList'
 import Slideshow from '../../containers/Slideshow/Slideshow'
 
