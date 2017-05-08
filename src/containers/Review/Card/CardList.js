@@ -21,7 +21,7 @@ class CardListContainer extends Component {
     loadNextReviews = () => {
         console.debug(this.props.newCount)
         if (window.scrollY + innerHeight >= document.body.offsetHeight && 
-            this.props.newCount >= this.limit) {
+            this.props.newCount > 0) {
             const params = {
                 _start: this.props.reviews.length,
                 _limit: this.limit,
@@ -54,11 +54,13 @@ class CardListContainer extends Component {
     }
 
     render() {
-        const {reviews, status} = this.props
+        const {reviews, status, newCount} = this.props
+        console.debug(newCount)
         return (
             <CardList
                 reviews={reviews} 
-                status={status} />
+                status={status}
+                newCount={newCount} />
         )
 
     }

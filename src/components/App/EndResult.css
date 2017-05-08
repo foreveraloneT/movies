@@ -1,0 +1,10 @@
+:local(.end-result) {
+    color:#D0826F;
+    text-align: center;
+    margin-top: 2%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9em;
+    /*padding-top: 1%;*/
+    /*border-top: 1px solid #D0826F;*/
+}

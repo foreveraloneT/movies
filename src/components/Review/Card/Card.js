@@ -65,7 +65,8 @@ export const Card = ({
               <TextTruncate
                 line={2}
                 truncateText="..."
-                text={content_no_tag} />
+                text={content_no_tag} 
+                textTruncateChild={<a href="#">See More</a>} />
             </article>
             <div className={styles['stat']}>
               <span className="glyphicon glyphicon-eye-open"></span> {statTranform(stat.view)}

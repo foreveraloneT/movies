@@ -3,11 +3,13 @@ import PropTypes from 'prop-types'
 import { Card } from './Card'
 import 'font-awesome/css/font-awesome.min.css'
 import FontAwesome from 'react-fontawesome'
- import styles from './CardList.css'
+import styles from './CardList.css'
+import { EndResult } from '../../App/EndResult'
 
 export const CardList = ({
     reviews,
-    status
+    status,
+    newCount,
 }) => { 
     return (
         <div className={styles['card-list']}>
@@ -23,10 +25,15 @@ export const CardList = ({
                 null :
                 <FontAwesome
                     className={styles['load-icon']}
-                    name='spinner'
+                    name='circle-o-notch'
                     size='2x'
                     spin
-                    tag='i' />
+                    tag='i' /> 
+            }
+            {
+                status === 'success' && newCount == 0 ?
+                <EndResult text='End of result'/> : 
+                null
             }
         </div>
     )
@@ -35,4 +42,5 @@ export const CardList = ({
 CardList.propTypes = {
     reviews: PropTypes.array.isRequired,
     status:PropTypes.string.isRequired,
+    newCount:PropTypes.number.isRequired,
 }

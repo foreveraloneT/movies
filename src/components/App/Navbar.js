@@ -33,7 +33,12 @@ export const Navbar = ({
       <div className="row">
         <div className="col-md-3 col-sm-4">
           <div className="navbar-header">
-            <a className="navbar-brand" href="#"><b>NERD MOVIES</b></a>
+            <Link 
+              className="navbar-brand" 
+              to="/"
+              onClick={() => clickHome()}>
+              <b>NERD MOVIES</b>
+            </Link>
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
              <span className="sr-only">Toggle navigation</span>
              <span className="icon-bar"></span>
