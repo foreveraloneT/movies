@@ -55,7 +55,6 @@ class CardListContainer extends Component {
 
     render() {
         const {reviews, status} = this.props
-        console.debug(status)
         return (
             <CardList
                 reviews={reviews} 

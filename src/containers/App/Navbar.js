@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Navbar } from '../../components/App/Navbar'
 import { reFreshReviewList } from '../../actions/review'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
+import { withRouter } from 'react-router'
 
 class NavbarContainer extends Component {
     static propTypes = {
@@ -10,7 +12,7 @@ class NavbarContainer extends Component {
     }
     
     state = {
-        current: 'home'
+        current: ''
     }
 
     reloadReviews = () => {
@@ -23,35 +25,30 @@ class NavbarContainer extends Component {
         this.props.refreshReviews(params)
     }
 
-    clickMenu = (menu) => {
-        this.setState({current: menu})
-    }
-
     clickAbout = () => {
-        this.clickMenu('about')
+        void(0);
     }
 
     clickHome = () => {
-        this.clickMenu('home')
         this.reloadReviews()
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return ! (this.state.current == nextState.current)
+        return true
     }
 
     render() {
-        console.debug(this.state.current)
+        console.debug(this.props.location.pathname)
         return (
             <Navbar 
                 clickHome={this.clickHome}
                 clickAbout={this.clickAbout}
-                current={this.state.current} />
+                pathname={this.props.location.pathname} />
         )
     }
 }
 
-export default connect(
-    null,
-    { refreshReviews: reFreshReviewList }   
+export default compose(
+    withRouter,
+    connect(null, { refreshReviews: reFreshReviewList }),
 )(NavbarContainer)

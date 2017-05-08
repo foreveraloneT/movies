@@ -15,17 +15,17 @@ const refreshPage = () => (
   window.location.reload()
 )
 
-const menuStyle = (current, menu) => (
+const menuStyle = (pathname, menu) => (
   classNames({
     "text-center": true,
-    active: current === menu,
+    active: pathname === menu,
   })
 )
 
 export const Navbar = ({
   clickHome,
   clickAbout,
-  current,
+  pathname,
 }) => (
   <nav className='navbar navbar-main' style={navbarStyle}>
     <div className="container">
@@ -51,12 +51,12 @@ export const Navbar = ({
           </div>
 
           <ul className="nav navbar-nav visible-xs">
-            <li className={menuStyle(current, 'home')}>
+            <li className={menuStyle(pathname, '/')}>
               <Link to='/' onClick={() => clickHome()}>
                 <b>Home</b>
               </Link>
             </li>
-            <li className={menuStyle(current, 'about')}>
+            <li className={menuStyle(pathname, '/about')}>
               <Link to='/about' onClick={() => clickAbout()}>
                 <b>About</b>
               </Link>
@@ -65,12 +65,12 @@ export const Navbar = ({
 
           <div className="col-md-2 col-sm-2">
             <ul className="nav navbar-nav navbar-right hidden-xs hidden-xs">
-              <li className={menuStyle(current, 'home')}>
+              <li className={menuStyle(pathname, '/')}>
                 <Link to='/' onClick={() => clickHome()} >
                   <span className="glyphicon glyphicon-home navbar-icon"></span>
                 </Link>
               </li>
-              <li className={menuStyle(current, 'about')}>
+              <li className={menuStyle(pathname, '/about')}>
                 <Link to='/about' onClick={() => clickAbout()} >
                   <span className="glyphicon glyphicon-question-sign navbar-icon"></span>
                 </Link>
@@ -88,7 +88,7 @@ export const Navbar = ({
 Navbar.proptypes = {
   clickHome: PropTypes.func.isRequired,
   clickAbout: PropTypes.func.isRequired,
-  current: PropTypes.string.isRequired,
+  pathname: PropTypes.string.isRequired,
 }
 
 export default Navbar
