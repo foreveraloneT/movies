@@ -1,0 +1,11 @@
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: grey;
+}
+
+:local(.content-space) {
+    width:100%;
+    min-height: 400px;
+    font-size: 1.2em;
+}
