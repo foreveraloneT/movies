@@ -2,11 +2,6 @@ import React from 'react';
 import styles from './Editor.css'
 import { EditorContent } from './EditorContent'
 
-const getValue = (e) => {
-    const title = document.getElementById('title')
-    console.log(title.innerText)
-}
-
 export const Editor = ({
     
 }) => (
@@ -16,14 +11,13 @@ export const Editor = ({
                className={`${styles["title-space"]} no-focus`}
                contentEditable={true}
                id="title"
-               placeholder="Title here..."
-               onKeyDown={(e) => getValue(e)} >Title here...
+               placeholder="Title here..." >
             </div>
             <div 
                 className={`${styles["content-space"]} no-focus`}
                 contentEditable={true}
                 id="content"
-                placeholder="Review here..." >Review here...
+                placeholder="Review here..." >
             </div>
         </div>
         <div className="col-md-4">
