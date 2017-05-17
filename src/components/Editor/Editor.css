@@ -1,27 +1,29 @@
-[contenteditable=true]:empty:before{
+[contentEditable=true]:empty:before{
   content: attr(placeholder);
-  display: inline-block;
+  display: block;
   color: #999;
   cursor: text;
   user-select: true;
+  word-break: break-word;
 }
 
 :local(.editor) {
-  min-height: 400px;
   margin-top: 3%;
   background-color: #fff;
   border-bottom: 1px solid rgba(100, 100, 100, .5);
 }
 
 :local(.content-space) {
+    min-height: 400px;
+    margin-left: 3%;
     width:100%;
     font-size: 1.2em;
     margin-top: 2%;
-    
 }
 
 :local(.title-space) {
   margin-top: 3%;
+  margin-left: 3%;
   width: 100%;
   font-size: 2em;
   font-weight: bold;
