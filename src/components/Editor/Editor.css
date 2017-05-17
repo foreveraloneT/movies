@@ -1,11 +1,29 @@
 [contenteditable=true]:empty:before{
   content: attr(placeholder);
-  display: block; /* For Firefox */
-  color: grey;
+  display: inline-block;
+  color: #999;
+  cursor: text;
+  user-select: true;
+}
+
+:local(.editor) {
+  min-height: 400px;
+  margin-top: 3%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(100, 100, 100, .5);
 }
 
 :local(.content-space) {
     width:100%;
-    min-height: 400px;
     font-size: 1.2em;
+    margin-top: 2%;
+    
+}
+
+:local(.title-space) {
+  margin-top: 3%;
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #D0826F;
 }

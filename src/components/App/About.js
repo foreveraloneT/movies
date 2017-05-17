@@ -7,9 +7,10 @@ export const About = ({
     <div className="container">
         <div className="row">
             <div className="col-md-12">
-                <h1 className="text-center">About Me</h1>   
+                <h1 className="text-center sr-only">About Me</h1>   
             </div>
         </div>
+        <Editor />
     </div>
 )
 
